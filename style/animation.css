@@ -1,0 +1,148 @@
+     @keyframes bolt0 {
+        0% {transform: translate(0px, 100px);}
+        25% {transform: translate(-100px, 300px);}
+        50% {transform: translate(0px, 200px);}
+        100% {transform: translate(-100px, 1000px);}
+      }
+      @keyframes bolt1 {
+        0% {transform: translate(200px, -100px);}
+        25% {transform: translate(-300px, 300px);}
+        50% {transform: translate(200px, 200px);}
+        100% {transform: translate(-300px, 1000px);}
+      }
+      @keyframes bolt2 {
+        0% {transform: translate(400px, -300px);}
+        25% {transform: translate(-100px, 300px);}
+        50% {transform: translate(400px, 200px);}
+        100% {transform: translate(-100px, 1000px);}
+      }
+      @keyframes bolt3 {
+        0% {transform: translate(600px, -500px);}
+        25% {transform: translate(100px, 300px);}
+        50% {transform: translate(600px, 200px);}
+        100% {transform: translate(100px, 1000px);}
+      }
+      @keyframes bolt4 {
+        0% {transform: translate(800px, -700px);}
+        25% {transform: translate(300px, 300px);}
+        50% {transform: translate(800px, 200px);}
+        100% {transform: translate(300px, 1000px);}
+      }
+      @keyframes bolt5 {
+        0% {transform: translate(1000px, -900px);}
+        25% {transform: translate(500px, 300px);}
+        50% {transform: translate(1000px, 200px);}
+        100% {transform: translate(500px, 1000px);}
+      }
+      @keyframes bolt6 {
+        0% {transform: translate(1200px, -1100px);}
+        25% {transform: translate(700px, 300px);}
+        50% {transform: translate(1200px, 200px);}
+        100% {transform: translate(700px, 1000px);}
+      }
+       @keyframes bolt7 {
+        0% {transform: translate(1400px, -1300px);}
+        25% {transform: translate(900px, 300px);}
+        50% {transform: translate(1400px, 200px);}
+        100% {transform: translate(900px, 1000px);}
+      }
+       @keyframes bolt8 {
+        0% {transform: translate(1600px, -1500px);}
+        25% {transform: translate(1100px, 300px);}
+        50% {transform: translate(1600px, 200px);}
+        100% {transform: translate(1100px, 1000px);}
+      }
+      @keyframes bolt9 {
+        0% {transform: translate(1800px, -1700px);}
+        25% {transform: translate(1300px, 300px);}
+        50% {transform: translate(1800px, 200px);}
+        100% {transform: translate(1300px, 1000px);}
+      }
+       body{
+        padding: 0;
+        margin: 0;
+      }
+    	a{
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		color: #00bfff;
+    		font-size: 1.5em;
+    	}
+    	ul{
+    		list-style-type: none;
+    		margin: 0;
+   			padding: 0;
+    	}
+    	li{
+    		display: inline;
+        padding-left: 10px;
+    	}
+      .bolt0 {
+        position: fixed;
+        animation-name: bolt1;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      .bolt1 {
+        position: fixed;
+        animation-name: bolt1;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt2 {
+        position: fixed;
+        animation-name: bolt2;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt3 {
+        position: fixed;
+        animation-name: bolt3;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt4 {
+        position: fixed;
+        animation-name: bolt4;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt5 {
+        position: fixed;
+        animation-name: bolt5;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt6 {
+        position: fixed;
+        animation-name: bolt6;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt7 {
+        position: fixed;
+        animation-name: bolt7;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt8 {
+        position: fixed;
+        animation-name: bolt8;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+        .bolt9 {
+        position: fixed;
+        animation-name: bolt9;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
