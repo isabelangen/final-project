@@ -3,7 +3,7 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
   diagram = loadImage('diagram.png')
-  angleMode(DEGREES); 
+  strum = loadSound('media/Instrument_Strum.mp3');
 }
 
 function draw() {
@@ -11,3 +11,6 @@ function draw() {
   image(diagram, mouseX-365, mouseY-200, 730, 409);
 }
 
+function mousePressed() {
+	strum.play();
+}
