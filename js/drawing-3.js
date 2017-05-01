@@ -11,7 +11,7 @@ function setup() {
 function draw() {
   background(backgroundColor);
 
-  // Distance between mouse and bolt 1
+  // Distance between mouse and bolts
   var distance1 = dist(mouseX, mouseY, 120, 120);
   var distance2 = dist(mouseX, mouseY, 120, 520);
   var distance3 = dist(mouseX, mouseY, 1270, 120);
@@ -46,7 +46,7 @@ function draw() {
     boltHover4 = false;
   }
 
-   // Determine if distance is less close to bolt 3
+   // Determine if distance is less close to bolt 5
   if (distance5 < 20) {
     boltHover5 = true;
   } else {
@@ -64,29 +64,44 @@ function draw() {
   image(bolt, 100, 500, 60, 60);
   image(bolt, 1250, 100, 60, 60);
   image(bolt, 1250, 500, 60, 60);
-
 }
 
-// Called once every time mouse is pressed
+function fadeTo (r, g, b){
+  var a = 0;
+  var timer = setInterval(fadeStep, 4);
+  function fadeStep (){
+    if (a<255){
+      a++;
+      backgroundColor = color(r, g, b, a);
+    }
+    else{
+      backgroundColor = color(r, g, b);
+      clearInterval(timer);
+    }
+  }
+}
+
+
+// Called when mouse is pressed
 function mousePressed() {
   if (boltHover1 == true) {
-    backgroundColor = color(random(255), random(255), random(255));
+    fadeTo(random(255), random(255), random(255));
     spaceBlast.play();
   }
   if (boltHover2 == true) {
-    backgroundColor = color(random(255), random(255), random(255));
+    fadeTo(random(255), random(255), random(255));
     spaceBlast.play();
   }
   if (boltHover3 == true) {
-    backgroundColor = color(random(255), random(255), random(255));
+    fadeTo(random(255), random(255), random(255));
     spaceBlast.play();
   }
   if (boltHover4 == true) {
-    backgroundColor = color(random(255), random(255), random(255));
+    fadeTo(random(255), random(255), random(255));
     spaceBlast.play();
   }
   if (boltHover5 == true) {
-    backgroundColor = color(random(255), random(255), random(255));
+    fadeTo(random(255), random(255), random(255));
     spaceBlast.play();
   }
 }
