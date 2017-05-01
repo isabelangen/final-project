@@ -4,7 +4,10 @@ function setup() {
   var myCanvas = createCanvas(windowWidth, windowHeight);
   bolt = loadImage('bolt.png');
   diagram = loadImage('diagram.png')
-  spaceBlast = loadSound('media/space-blast.mp3');
+  drum = loadSound('media/Drum_Rhythm_Sound_Effect.mp3');
+  strum = loadSound('media/Instrument_Strum.mp3');
+  boing = loadSound('media/Concussive_Hit_Guitar_Boing.mp3');
+  guitar = loadSound('media/Electric_guitar_sound_effect.mp3');
   backgroundColor = color(255, 255, 255);
 }
 
@@ -86,22 +89,21 @@ function fadeTo (r, g, b){
 function mousePressed() {
   if (boltHover1 == true) {
     fadeTo(random(255), random(255), random(255));
-    spaceBlast.play();
+    drum.play();
   }
   if (boltHover2 == true) {
     fadeTo(random(255), random(255), random(255));
-    spaceBlast.play();
+    boing.play();
   }
   if (boltHover3 == true) {
     fadeTo(random(255), random(255), random(255));
-    spaceBlast.play();
+    strum.play();
   }
   if (boltHover4 == true) {
     fadeTo(random(255), random(255), random(255));
-    spaceBlast.play();
+    guitar.play();
   }
   if (boltHover5 == true) {
     fadeTo(random(255), random(255), random(255));
-    spaceBlast.play();
   }
 }
